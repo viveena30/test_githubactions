@@ -1,0 +1,26 @@
+# input data :-
+# repo,ref
+# network_intrusion_detection,master
+# bengaluru_house_price_prediction,master
+
+name: test_checkout_avoid_submodules
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout-and-list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # Uses the latest version of actions/checkout
+
+      - name: List files in the workspace
+        run: ls -la  # Lists all files including hidden ones
+
+      # - name: Checkout repository
+      #   uses: viveena30/checkout_to_avoid_submodules@main 
+      #   with:
+      #     submodulesCSV: true
+
+      # - name: List files in the workspace
+      #   run: ls -la  # Lists all files including hidden ones
