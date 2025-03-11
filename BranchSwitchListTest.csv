@@ -1,3 +1,3 @@
-repo,ref
-viveena30/network_intrusion_detection,master
-bengaluru_house_price_prediction,master
+repo,ref,path
+viveena30/network_intrusion_detection,master,/network_intrusion_detection/
+bengaluru_house_price_prediction,master,/bengaluru_house_price_prediction/
