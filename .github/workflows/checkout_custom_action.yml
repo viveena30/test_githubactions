@@ -1,0 +1,15 @@
+name: checkout_custom_action
+on:
+  workflow_dispatch:
+jobs:
+  checkout-from-csv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Custom Checkout
+        uses: viveena30/checkout_csv@main
+        with:
+          csvPath: 'BranchSwitchListTest.csv'
+          cleanup: true
