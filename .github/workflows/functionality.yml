@@ -1,0 +1,14 @@
+name: check_funct.
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout_other_repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: execute checkout dummy-swc-1
+        uses: viveena30/checkout_test@main
+        with: 
+          repository: vv-030/dummy-swc-1
+          ref: main
+          token: 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
