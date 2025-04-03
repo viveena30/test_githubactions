@@ -1,7 +1,7 @@
 name: check_triggers
 on:
   workflow_call:
-  # workflow_dispatch:
+  workflow_dispatch:
   # push:
   #   branches:
   #     - 'main'
