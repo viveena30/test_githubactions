@@ -1,0 +1,11 @@
+name: call_trigger
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - 'main'
+
+jobs:
+  call_workflow:
+    uses: ./.github/workflows/triggers.yml
+
